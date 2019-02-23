@@ -1,0 +1,61 @@
+{
+  "name": "webpack-starter-html",
+  "version": "1.1.0",
+  "description": "Quickly set-up a webpack based project with SCSS, HTML and ES6",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack -p --config config/build.config.js --progress --colors",
+    "serve": "webpack-dev-server --config config/dev.config.js --content-base dist/ --watch --progress --colors --open"
+  },
+  "author": "Ozer GUL <ozergul@yandex.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ozergul/webpack-starter-html.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ozergul/webpack-starter/issues"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
+    "autoprefixer": "9.1.0",
+    "babel-loader": "^8.0.4",
+    "copy-webpack-plugin": "4.5.2",
+    "cross-env": "5.2.0",
+    "css-loader": "1.0.0",
+    "eslint": "^5.7.2",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-flowtype": "2.50.0",
+    "eslint-plugin-import": "2.13.0",
+    "extract-text-webpack-plugin": "4.0.0-beta.0",
+    "file-loader": "1.1.11",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^4.0.0-beta.2",
+    "mini-css-extract-plugin": "^0.4.5",
+    "node-sass": "4.9.2",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "postcss-loader": "^3.0.0",
+    "resolve-url-loader": "2.3.0",
+    "sass-loader": "7.1.0",
+    "script-loader": "0.7.2",
+    "style-loader": "^0.23.1",
+    "url-loader": "1.0.1",
+    "webpack": "^4.21.0",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.9",
+    "webpack-merge": "^4.2.1"
+  },
+  "dependencies": {
+    "clean-webpack-plugin": "^1.0.1",
+    "uglifyjs-webpack-plugin": "^2.1.1"
+  },
+  "homepage": "https://github.com/ozer/webpack-starter-html#readme",
+  "keywords": [
+    "webpack",
+    "es6",
+    "scss",
+    "starter"
+  ]
+}
