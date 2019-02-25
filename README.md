@@ -1,6 +1,6 @@
 # Webpack Starter
 
-Webpack Starter project can be used any HTML/CSS project especially is good for PSD/Skectch etc to HTML works.
+Webpack Starter project can be used any HTML/CSS project especially is good for PSD/Sketch etc to HTML works.
 
 ESLint, ES6, SCSS, Webpack 4.
 
