@@ -95,7 +95,26 @@ module.exports = {
       // Css-loader & sass-loader
       {
         test: /\.scss$/,
-        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"]
+        use: [MiniCssExtractPlugin.loader,
+          "css-loader",
+          "sass-loader",
+          {
+            loader: 'postcss-loader',
+            options: {
+              ident: 'postcss',
+              plugins: () => [
+                require('autoprefixer')({
+                  browsers: [
+                    '>1%',
+                    'last 4 versions',
+                    'Firefox ESR',
+                    'not ie < 9',
+                  ],
+                })
+              ]
+            }
+          }
+        ]
       },
       // Load fonts
       {
