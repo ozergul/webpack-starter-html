@@ -5,7 +5,7 @@
 
 Webpack Starter project can be used any HTML/CSS project especially is good for PSD/Sketch to static HTML works. (Includes jQuery).
 
-ESLint, ES6, SCSS, Webpack 4.
+ESLint, ES6, SCSS, SCSS Lint, Webpack 4.
 
 Requires Nodejs ^v10
 

@@ -7,6 +7,7 @@ const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CleanWebpackPlugin = require("clean-webpack-plugin");
+const StyleLintPlugin = require('stylelint-webpack-plugin');
 
 const opts = {
   rootDir: process.cwd(),
@@ -40,6 +41,10 @@ module.exports = {
     // Clean dist
     new CleanWebpackPlugin(["dist"], { root: Path.resolve(__dirname, "..") }),
 
+    //StyleLint
+    new StyleLintPlugin({}),
+
+    // for jQuery
     new Webpack.ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery'
@@ -106,6 +111,7 @@ module.exports = {
       {
         test: /\.scss$/,
         use: [MiniCssExtractPlugin.loader,
+          
           "css-loader",
           "sass-loader",
           {
