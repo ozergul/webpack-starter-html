@@ -23,6 +23,8 @@ module.exports = {
     pathinfo: opts.devBuild,
     filename: "js/[name].js"
   },
+  
+
   optimization: {
     minimizer: [
       new UglifyJsPlugin({
@@ -52,8 +54,8 @@ module.exports = {
 
     // Extract css files to seperate bundle
     new MiniCssExtractPlugin({
-      filename: "css/[name].css",
-      chunkFilename: "css/[id].css"
+      filename: "css/[name].[hash].css",
+      chunkFilename: "css/[id].[hash].css"
     }),
     // Copy fonts and images to dist
     new CopyWebpackPlugin([
@@ -103,13 +105,9 @@ module.exports = {
         loader: ["babel-loader"]
       },
 
-      {
-        test: /\.css$/,
-        use:['css-loader']
-      },
       // Css-loader & sass-loader
       {
-        test: /\.scss$/,
+        test: /\.(sa|sc|c)ss$/,
         use: [MiniCssExtractPlugin.loader,
           
           "css-loader",
@@ -121,9 +119,8 @@ module.exports = {
               plugins: () => [
                 require('autoprefixer')({
                   browsers: [
-                    '>1%',
+                    '>0.5%',
                     'last 4 versions',
-                    'Firefox ESR',
                     'not ie < 9',
                   ],
                 })

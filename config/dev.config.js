@@ -6,6 +6,14 @@ module.exports = WebpackMerge(WebpackCommon, {
   // Use cheap-source-maps for faster builds
   devtool: "inline-eval-cheap-source-map",
   devServer: {
-    port: 9000
+    port: 9000,
+    stats: {
+      children: false,
+      chunks: false,
+      chunkModules: false,
+      modules: false,
+      reasons: false,
+      useExports: false,
+    },
   }
 });
