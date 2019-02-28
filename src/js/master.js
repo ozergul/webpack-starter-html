@@ -1,3 +1,3 @@
-import "../css/app.scss";
+import "../css/master.scss";
 
 console.log("master.js");
