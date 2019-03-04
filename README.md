@@ -23,12 +23,12 @@ Requires Nodejs ^v10
 
 ### Clone the repository
 ```shell
-git clone https://github.com/ozergul/webkpack-starter-html.git
+git clone https://github.com/ozergul/webpack-starter-html.git
 ```
 
 ### Go into folder
 ```shell
-cd webkpack-starter-html
+cd webpack-starter-html
 ```
   
 
