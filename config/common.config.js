@@ -44,7 +44,7 @@ module.exports = {
     new CleanWebpackPlugin(["dist"], { root: Path.resolve(__dirname, "..") }),
 
     //StyleLint
-    new StyleLintPlugin({}),
+    //new StyleLintPlugin({}),
 
     // for jQuery
     new Webpack.ProvidePlugin({

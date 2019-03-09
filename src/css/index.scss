@@ -1,14 +1,5 @@
 @import "master.scss";
 
-@font-face {
-	font-family: 'PT Sans';
-	src: url('/fonts/PTSans-Regular.woff2') format('woff2'),
-	url('/fonts/PTSans-Regular.woff') format('woff'),
-	url('/fonts/PTSans-Regular.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
-
 body {
 	color: $red; font-family: 'PT Sans';
 }
