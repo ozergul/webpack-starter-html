@@ -7,7 +7,7 @@ Webpack Starter project can be used any HTML/CSS project especially is good for 
 
 ESLint, ES6, SCSS, SCSS Lint, Webpack 4.
 
-Requires Nodejs ^v10
+Requires Nodejs ^v12
 
 ### Project structure
 ```shell
